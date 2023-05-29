@@ -97,4 +97,4 @@ O Portfolio Crypto é distribuído sob a licença MIT. Sinta-se à vontade para 
 Caio B. Zamana
 
 ## Agradecimentos
-Gostaria de expressar nossa gratidão à comunidade de desenvolvedores e às diversas bibliotecas de código aberto que tornaram este projeto possível. Obrigado por compartilharem seu conhecimento e recursos.
+Gostaria de expressar gratidão à comunidade de desenvolvedores e às diversas bibliotecas de código aberto que tornaram este projeto possível. Obrigado por compartilharem seu conhecimento e recursos.
