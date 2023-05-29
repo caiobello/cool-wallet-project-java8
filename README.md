@@ -43,7 +43,7 @@ com.coolwallet.repository<br>
 
 <br>CoolWalletProjectApplication<br>
 
-![img_1.png](img_1.png)
+![img_1.png](imgs/img_1.png)
 
 
 
@@ -60,8 +60,8 @@ O Portfolio Crypto oferece as seguintes funcionalidades:
 * Registro de transações de compra e venda de criptomoedas.
 * Acesso a informações em tempo real sobre preços e estatísticas das criptomoedas.
 ## Estrutura do Projeto
-![img.png](img.png)
-![img_2.png](img_2.png)
+![img.png](imgs/img.png)
+![img_2.png](imgs/img_2.png)
 
 O projeto é organizado em diferentes pacotes e classes, seguindo as melhores práticas de desenvolvimento. A estrutura do projeto é a seguinte:
 
@@ -97,4 +97,4 @@ O Portfolio Crypto é distribuído sob a licença MIT. Sinta-se à vontade para 
 Caio B. Zamana
 
 ## Agradecimentos
-Gostaríamos de expressar nossa gratidão à comunidade de desenvolvedores e às diversas bibliotecas de código aberto que tornaram este projeto possível. Obrigado por compartilharem seu conhecimento e recursos.
+Gostaria de expressar nossa gratidão à comunidade de desenvolvedores e às diversas bibliotecas de código aberto que tornaram este projeto possível. Obrigado por compartilharem seu conhecimento e recursos.
