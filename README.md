@@ -1,7 +1,5 @@
 # Dominio da aplicação - Portfolio Crypto
 
-![img_1.png](img_1.png)
-
 com.coolwallet.controller<br>
 └── CustomUserDetailsService<br>
 └── SecurityConfig<br>
@@ -44,6 +42,8 @@ com.coolwallet.repository<br>
 └── TransactionRepository.java<br>
 
 <br>CoolWalletProjectApplication<br>
+
+![img_1.png](img_1.png)
 
 
 
