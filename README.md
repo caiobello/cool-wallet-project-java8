@@ -1,4 +1,16 @@
-# Dominio da aplicação - Portfolio Crypto
+# Gerenciamento de Portfolio de Criptomoedas
+
+O projeto CoolWallet é um sistema de gerenciamento de carteira de criptomoedas. Ele permite aos usuários realizar operações como criação de contas de usuário, registro de transações, monitoramento de portfólios e interação com diferentes criptomoedas. O projeto é composto por diversos componentes, como controladores, DTOs, modelos, serviços e repositórios.
+
+Os controladores, localizados no pacote "com.coolwallet.controller", fornecem as interfaces de comunicação com o sistema. Existem controladores específicos para as entidades relacionadas ao usuário, portfólio, criptomoeda e transação.
+
+As classes DTO, no pacote "com.coolwallet.dto", são utilizadas para transferir dados entre os controladores e os serviços. Elas representam objetos de transferência de dados para as entidades de criptomoeda, portfólio, transação e usuário.
+
+No pacote "com.coolwallet.model", encontram-se as classes de modelo, como User, Portfolio, Cryptocurrency e Transaction. Essas classes representam as entidades principais do sistema e possuem os atributos e métodos relacionados a cada uma delas.
+
+Os serviços, localizados em "com.coolwallet.service", implementam a lógica de negócio do sistema. Eles são responsáveis por realizar as operações relacionadas a usuários, portfólios, criptomoedas e transações. Além disso, existe o pacote "com.coolwallet.service.impl", que contém as implementações concretas dos serviços.
+
+## Dominio da aplicação - Portfolio Crypto
 
 com.coolwallet.controller<br>
 └── CustomUserDetailsService<br>
