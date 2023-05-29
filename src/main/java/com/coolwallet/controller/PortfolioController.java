@@ -7,6 +7,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/api/portfolios")
 public class PortfolioController {
@@ -29,5 +31,21 @@ public class PortfolioController {
         return ResponseEntity.ok(portfolio);
     }
 
-    // Additional endpoint mappings and methods for portfolio-related operations
+    @PutMapping("/{id}")
+    public ResponseEntity<Portfolio> updatePortfolio(@PathVariable Long id, @RequestBody Portfolio portfolio) {
+        Portfolio updatedPortfolio = portfolioService.updatePortfolio(id, portfolio);
+        return ResponseEntity.ok(updatedPortfolio);
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> deletePortfolio(@PathVariable Long id) {
+        portfolioService.deletePortfolio(id);
+        return ResponseEntity.noContent().build();
+    }
+
+    @GetMapping
+    public ResponseEntity<List<Portfolio>> getAllPortfolios() {
+        List<Portfolio> portfolios = portfolioService.getAllPortfolios();
+        return ResponseEntity.ok(portfolios);
+    }
 }
