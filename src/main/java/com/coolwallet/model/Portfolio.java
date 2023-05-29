@@ -21,5 +21,13 @@ public class Portfolio {
         this.id = id;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     // Constructors, getters, and setters
 }

@@ -1,11 +1,15 @@
 package com.coolwallet.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+
+import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
 
 @Entity
+@Table
 public class Users {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -37,5 +41,13 @@ public class Users {
     public void setPassword(String password) {
         this.password = password;
     }
+
+
+    public Collection<? extends GrantedAuthority> getAuthorities() {
+        // Retorne a lista de autoridades (papéis) do usuário
+        List<GrantedAuthority> authorities = new ArrayList<>();
+        authorities.add(new SimpleGrantedAuthority("ROLE_USER"));
+        return authorities;
+    }
+    }
     /* Constructors, getters, and setters */
-}
