@@ -1,9 +1,19 @@
 # Dominio da aplicação - Portfolio Crypto
 com.coolwallet.controller<br>
+└── CustomUserDetailsService<br>
+└── SecurityConfig<br>
+
+com.coolwallet.controller<br>
 ├── UserController.java<br>
 ├── PortfolioController.java<br>
 ├── CryptocurrencyController.java<br>
 └── TransactionController.java<br>
+
+com.coolwallet.dto<br>
+└── CryptocurrencyDTO <br>
+└── PortfolioDTO<br>
+└── TransactionDTO<br>
+└── UsersDTO<br>
 
 
 com.coolwallet.model<br>
@@ -29,3 +39,5 @@ com.coolwallet.repository<br>
 ├── PortfolioRepository.java<br>
 ├── CryptocurrencyRepository.java<br>
 └── TransactionRepository.java<br>
+
+<br>CoolWalletProjectApplication<br>
