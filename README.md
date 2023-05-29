@@ -1,4 +1,7 @@
 # Dominio da aplicação - Portfolio Crypto
+
+![img_1.png](img_1.png)
+
 com.coolwallet.controller<br>
 └── CustomUserDetailsService<br>
 └── SecurityConfig<br>
@@ -57,6 +60,9 @@ O Portfolio Crypto oferece as seguintes funcionalidades:
 * Registro de transações de compra e venda de criptomoedas.
 * Acesso a informações em tempo real sobre preços e estatísticas das criptomoedas.
 ## Estrutura do Projeto
+![img.png](img.png)
+![img_2.png](img_2.png)
+
 O projeto é organizado em diferentes pacotes e classes, seguindo as melhores práticas de desenvolvimento. A estrutura do projeto é a seguinte:
 
 * com.coolwallet.controller: Pacote contendo as classes responsáveis pelo controle da aplicação, incluindo recursos de segurança e autenticação.
