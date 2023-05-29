@@ -1,5 +1,4 @@
-package com.coolwallet;
-
+package com.coolwallet.configsecurity;
 
 import com.coolwallet.model.Users;
 import com.coolwallet.repository.UserRepository;
@@ -27,10 +26,10 @@ public class CustomUserDetailsService implements UserDetailsService {
         // Aqui você retorna uma implementação de UserDetails com base nos dados do usuário
         // Por exemplo, você pode retornar uma instância de org.springframework.security.core.userdetails.User
 
-        return new org.springframework.security.core.userdetails.User(
-                user.getUsername(),
-                user.getPassword(),
-                user.getAuthorities()
-        );
+        return org.springframework.security.core.userdetails.User.builder()
+                .username(user.getUsername())
+                .password(user.getPassword())
+                .authorities(user.getAuthorities())
+                .build();
     }
 }

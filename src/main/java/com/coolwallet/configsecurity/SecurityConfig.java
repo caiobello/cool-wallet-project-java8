@@ -1,7 +1,6 @@
-package com.coolwallet.config;
+package com.coolwallet.configsecurity;
 
 
-import com.coolwallet.CustomUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -37,7 +36,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
-                .antMatchers("/h2-console/**").permitAll()
+                .antMatchers("/api/users").permitAll()
                 .anyRequest().authenticated()
                 .and()
                 .formLogin().permitAll()
